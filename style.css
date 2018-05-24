@@ -234,7 +234,8 @@ html {
      -webkit-background-clip: text;
      background-clip: text;
      -webkit-text-fill-color: transparent;
-     text-fill-color: transparent;   
+     text-fill-color: transparent;  
+    color: #de9115;
 }
 
 .var {
