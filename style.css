@@ -452,7 +452,7 @@ h3 {
     margin: 7rem;
     position: relative;
     padding: 2rem;
-    border-radius: 45px;
+    border-radius: 5px;
 }
 
 
@@ -487,13 +487,13 @@ h3 {
     background-image:  linear-gradient(90deg, #ffea00, #e8f4a6, #e68616, #ffea00);
     background-size: 170%;
     animation: button 8s linear infinite alternate;
-    width: 60%;
+    width: 65%;
 }
 #jquery:after {
     background-image:  linear-gradient(90deg, #5f76f8, #308ffe, #094fd3, #5f76f8);
     background-size: 170%;
     animation: button 9s linear infinite alternate;
-    width: 55%;
+    width: 45%;
 }
 #sass:after {
     background-image:  linear-gradient(90deg, #f48fb1, #f5cfdc, #e8155c, #f48fb1);
@@ -501,8 +501,15 @@ h3 {
     animation: button 9s linear infinite alternate;
     width: 80%;
 }
-#php:after {
-    background-image:  linear-gradient(90deg, #b39ddb, #f5cfdc, #906dd0, #b39ddb);
+#react:after {
+    background-image:  linear-gradient(90deg, #19B5FE, #6BB9F0, #89C4F4, #19B5FE);
+    background-size: 170%;
+    animation: button 10s linear infinite alternate;
+    background-color: #;
+    width: 30%;
+}
+#py:after {
+    background-image:  linear-gradient(90deg, #1E8BC3, #19B5FE, #1E8BC3, #1E8BC3);
     background-size: 170%;
     animation: button 10s linear infinite alternate;
     background-color: #;
