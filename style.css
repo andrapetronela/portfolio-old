@@ -189,7 +189,7 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 
-    
+    height: auto;
 }
 
 
@@ -207,6 +207,12 @@ html {
     grid-column: col-start 2 / col-end 7;
     display: grid;
     position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+    .chart {
+        grid-column: full-start / full-end;
+    }
 }
 .footer {
     grid-column: full-start / full-end;
@@ -265,7 +271,7 @@ html {
 .paragraphs:hover {
     transform: scale(.7);
 }
- 
+
 
 h3 {
     text-align: center;
@@ -408,27 +414,7 @@ h3 {
     color: #333;
     transition: all .5s;
 }
-/*
-.site-button:before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    z-index: -1;
-    background-image: linear-gradient(90deg, #2196f3, #f50057, #ffeb3b, #2196f3);
-    background-size: 400%;
-    filter: blur(2rem);
-    opacity: 0;
-    transition: all .5s;
-}
 
-.site-button:hover:before {
-    opacity: 1;
-    filter: blur(2rem);
-    animation: button 8s linear infinite;
-}*/
 
 @keyframes button {
     0% {
@@ -449,10 +435,11 @@ h3 {
 
 .skills {
     background-color: rgba(0, 0, 0, 0.72);
-    margin: 7rem;
+    margin: 2rem .2rem;
     position: relative;
     padding: 2rem;
     border-radius: 5px;
+    width: 100%;
 }
 
 
