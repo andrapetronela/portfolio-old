@@ -18,6 +18,12 @@ html {
     
     font-family: 'Open Sans';
 }
+ @media only screen and (max-width: 900px) {
+     .container {
+         grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+     }
+    }
 
 .sidebar {
     background-color: #111;
@@ -25,8 +31,18 @@ html {
     grid-column: sidebar-start / sidebar-end;
     color: rgba(234, 9, 76, 1);
     cursor: pointer;
-    
+ 
 }
+
+  
+     @media only screen and (max-width: 900px) {
+         .sidebar {
+             grid-column: 1 / -1;
+             grid-row: 1/ 2;
+             display: inline-flex;
+         }
+         
+    }
 
 .port-container {
     display: grid;
@@ -186,23 +202,7 @@ html {
     font-weight: 300;
     text-transform: uppercase;
 }
-/*
-.container-1 {
-    grid-column: col-start 1/ col-end 4;
-    
-}
-.container-2 {
-    grid-column: col-start 5 / col-end 8;
-}
 
-.container-3 {
-    grid-column: col-start 1/ col-end 4;
-}
-
-.container-4 {
-    grid-column: col-start 5/ col-end 8;
-}
-*/
 .chart {
     grid-column: col-start 2 / col-end 7;
     display: grid;
@@ -274,7 +274,7 @@ h3 {
 }
 
 .card {
-    width: 60%;
+    width: 75%;
     background-color: rgba(255, 255, 255, 0.29);
     margin: 5rem auto ;
     box-shadow:  -5px 0 6px #ccc, 5px 0 6px #ccc;
@@ -521,7 +521,11 @@ h3 {
     background-color: #333;
     color: #fff;
     position: relative;
-    font-size: 1.7rem;    
+    font-size: 1.5rem;    
+}
+
+.heart {
+    color: #e54848;
 }
 .footer p {
     position: absolute;
