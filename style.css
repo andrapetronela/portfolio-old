@@ -33,9 +33,7 @@ html {
     cursor: pointer;
  
 }
-
-  
-     @media only screen and (max-width: 900px) {
+ @media only screen and (max-width: 900px) {
          .sidebar {
              grid-column: 1 / -1;
              grid-row: 1/ 2;
@@ -99,8 +97,8 @@ html {
 
 .title {
      font-size: 6.5rem;
-     background: -webkit-linear-gradient(to left bottom, #dc28f4, #1571ba, #f20056);
-     background: linear-gradient(to left bottom, #dc28f4, #5ea8e3 10%, #ff005b);
+     background: -webkit-linear-gradient(to left bottom, #071D7E, #8E117D, #D4336A, #FB7155, #FFB54E);
+     background: linear-gradient(to left bottom,#071D7E 10%, #8E117D, #D4336A, #FB7155, #FFB54E);
      -webkit-background-clip: text;
      background-clip: text;
      -webkit-text-fill-color: transparent;
