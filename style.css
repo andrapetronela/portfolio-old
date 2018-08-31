@@ -36,11 +36,19 @@ html {
  @media only screen and (max-width: 900px) {
          .sidebar {
              grid-column: 1 / -1;
-             grid-row: 1/ 2;
-             display: inline-flex;
+             grid-row: auto;
+             display: grid;
+             grid-template-columns: repeat(5, auto);
+             
          }
-         
-    }
+     .sidebar-item {
+         padding: 0;
+         letter-spacing: 0;
+         font-size: 1rem;
+         display: inline-block;
+     }
+     .hidden { visibility: hidden;}
+}
 
 .port-container {
     display: grid;
@@ -187,7 +195,6 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 
-    height: auto;
 }
 
 
