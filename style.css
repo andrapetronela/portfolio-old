@@ -335,13 +335,14 @@ h3 {
 .beauty__heading,
 .cerc__heading,
 .day__heading {
-        color: #959595;
-        padding: 3rem 0 3rem 3rem;
+        color: #333;
+        padding: 3rem 0 3rem 4rem;
         text-transform: uppercase;
         font-size: 1.5rem;
+        font-weight: 600; 
         text-align: left;
         letter-spacing: 1px;
-}
+} 
 
 .app__heading span,
 .beauty__heading span,
@@ -358,18 +359,17 @@ h3 {
         display: block;
         margin: 0 auto;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: 150%;
-        color: #9a9a9a;
-        letter-spacing: 1px;
+        color: #333;
     }
     
 .app__challenge,
 .beauty__challenge,
 .cerc__challenge,
 .day__challenge {
-        color: #8e8b8b;
-        font-size: 14px;
+        color: #333;
+        font-size: 1.5rem;
         margin: 3rem 4rem 1rem 2rem;
         display: inline-block;
         padding-top: 1rem;
@@ -380,7 +380,8 @@ h3 {
 .beauty__challenge span,
 .cerc__challenge span,
 .day__challenge span {
-            color: #8e8b8b;
+            color: #333;
+            font-weight: 600;
         } 
     
     
@@ -388,7 +389,7 @@ h3 {
 .beauty__achievements, 
 .cerc__achievements,
 .day__achievements {
-        color: #8e8b8b;
+        color: #333;
         font-size: 1.4rem;
         margin-left: 2rem; 
 }
@@ -396,7 +397,8 @@ h3 {
 .beauty__achievements span, 
 .cerc__achievements span,
 .day__achievements span {
-            color: #8e8b8b;
+            color: #333;
+            font-weight: 600;
         }
     
 .site-button:link,
@@ -411,7 +413,7 @@ h3 {
     font-size: 1.4rem;
     text-align: center;
     margin-top: 2rem;
-    transition: all .3s;
+    transition: all .5s;
     position: relative;
     z-index: 1;
     border-bottom-left-radius: 3px;
@@ -420,7 +422,7 @@ h3 {
 
 .site-button:hover,
 .site-button:active {
-    animation: button 8s linear infinite;
+    animation: button 12s linear infinite;
     font-size: 1.3rem;
     color: #333;
     transition: all .5s;
@@ -435,7 +437,15 @@ h3 {
         background-position: 400%;
     }
 }
+.challenge:link,
+.challenge:visited {
+    color: #333;
+}
 
+.challenge:hover,
+.challenge:active {
+    color: #0069c0;
+}
 .skills-heading {
     text-transform: uppercase;
     text-align: center;
