@@ -34,18 +34,23 @@
                 $('.a2').css({
                             'bottom': '0',
                             'transform': 'rotate(360deg)'});
+                
+                $('html').contextmenu(function () {
+                 alert('Hello');
+                })
+                
             });
         </script>
         
         <div class="sidebar">
-            <a href="#about" class="sidebar-item">About</a>
-            <a href="#portfolio" class="sidebar-item">Portfolio</a>
-            <a  href="https://github.com/andrapetronela/" class="sidebar-item">
+            <a href="#about" class="sidebar-item" target="_blank">About</a>
+            <a href="#portfolio" class="sidebar-item" target="_blank">Portfolio</a>
+            <a  href="https://github.com/andrapetronela/" class="sidebar-item" target="_blank">
             GitHub</a>
-            <a href="https://www.facebook.com/andraAPP" class="sidebar-item hidden">Facebook</a>
-            <a href="https://www.linkedin.com/in/andra-strachinaru-120595b1/" class="sidebar-item hidden">Linkedin</a>
+            <a href="https://www.facebook.com/andraAPP" class="sidebar-item hidden" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/andra-strachinaru-120595b1/" class="sidebar-item hidden" target="_blank">Linkedin</a>
             
-            <a  href="AS.png" class="sidebar-item hidden">
+            <a  href="AS.png" class="sidebar-item hidden" target="_blank">
             Resume</a>
             
             
@@ -71,8 +76,8 @@
         <div class="bio-container" id="about">
         <div class="biography"> 
             <div class="source-text">
-                       <pre> <code class="code"> <span class="var">var</span> <span class="bio">biography </span>= {
-                <span class="obj">name</span>: 'Andra',
+                       <pre> <code class="code"> <span class="var">let</span> <span class="bio">biography </span>= {
+                <span class="obj">firstName</span>: 'Andra',
                 <span class="obj">lastName</span>: 'Strachinaru',
                 <span class="obj">yearOfBirth</span>: 1989,
                 <span class="obj">age</span>: 'Can you guess it?',
