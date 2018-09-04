@@ -113,15 +113,21 @@ html {
      background-clip: text;
      -webkit-text-fill-color: transparent;
      text-fill-color: transparent; 
-    display: none;
+    
 }
    
 .letter-wrapper {
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 45%;
     transform: translate(-50%, -50%);
-    
+    z-index: 22;
+}
+
+@media only screen and (max-width:700px) {
+    .letter-wrapper {
+        display: none;
+    }
 }
 .a1 {
     position: relative;
@@ -205,10 +211,9 @@ html {
         grid-template-columns: 1fr;
         padding: 0;
         margin: 0;}
-    
-
+   
      .source-text {
-        padding: 2rem 0;
+        padding: 3rem;
     }
 }
 
