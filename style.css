@@ -204,14 +204,9 @@ html {
     .bio-container {
         grid-template-columns: 1fr;
         padding: 0;
-    }
-     .source-text {
-        padding: 5rem;
-    }
+        margin: 0;}
     
-}
 
-@media only screen and (max-width: 600px) {
      .source-text {
         padding: 2rem 0;
     }
