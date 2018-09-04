@@ -7,6 +7,7 @@
 html {
     font-family: sans-serif;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -17,6 +18,7 @@ html {
     grid-template-rows: 97vh auto repeat(5, min-content); 
     
     font-family: 'Open Sans';
+    
 }
  @media only screen and (max-width: 900px) {
      .container {
@@ -296,7 +298,8 @@ h3 {
 
 @media only screen and (max-width: 1200px) {
     .card {
-        margin: .2rem auto;
+        margin: .2rem 0;
+        grid-column: 1 / -1;
     }
 }
 
@@ -323,10 +326,6 @@ h3 {
     transform: scale(1.1);
 }
 
-.photo-1:hover,
-.photo-8:hover {
-    transform: scale(.9);
-}
 
 .photo-container {
     align-items: start;
@@ -344,6 +343,14 @@ h3 {
         letter-spacing: 1px;
 } 
 
+@media only screen and (max-width: 1200px) {
+    .app__heading, 
+    .beauty__heading,
+    .cerc__heading,
+    .day__heading {
+        padding: .8rem 3rem;
+    }
+}
 .app__heading span,
 .beauty__heading span,
 .day__heading span {
@@ -374,6 +381,16 @@ h3 {
         display: inline-block;
         padding-top: 1rem;
         border-top: 1px solid #dedede; 
+}
+
+@media only screen and (max-width: 1200px) {
+    .app__challenge,
+    .beauty__challenge,
+    .cerc__challenge,
+    .day__challenge {
+        margin-top: .2rem;
+        padding-top: .8rem;
+    }
 }
 
 .app__challenge span,
