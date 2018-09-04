@@ -222,7 +222,7 @@ html {
     text-align: center;
     display: block;
     padding: 5rem 0;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -479,30 +479,17 @@ h3 {
 .challenge:active {
     color: #0069c0;
 }
-.skills-heading {
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 7rem;
-    font-size: 2.4rem;
-    font-weight: 300;
-}
 
+
+.heading-skills {
+    
+}
 .skills {
-    background-color: rgba(0, 0, 0, 0.72);
-    margin: 2rem .2rem;
-    position: relative;
-    padding: 2rem;
-    border-radius: 5px;
-    width: 100%;
-}
-
-
-.skills-table {
     grid-column: full-start / full-end;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem auto;
+    margin: 4rem auto;
     justify-content: center;
     align-items: center;
 }
