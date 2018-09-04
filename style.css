@@ -262,7 +262,7 @@ html {
 }
 
 .source-text {
-    background: -webkit-linear-gradient(#00b248, #00e676, #b2ff59);
+    background: -webkit-linear-gradient(57deg, #de9115,  #f2ab64);
      background: linear-gradient(57deg, #de9115,  #f2ab64);
      -webkit-background-clip: text;
      background-clip: text;
