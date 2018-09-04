@@ -15,7 +15,7 @@ html {
     overflow-x: hidden;
     background-color: #eee;
     grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)[full-end];
-    grid-template-rows: 100vh auto repeat(5, min-content); 
+    grid-template-rows: 97vh auto repeat(5, min-content); 
     
     font-family: 'Open Sans';
     
@@ -198,7 +198,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 @media only screen and (max-width: 600px) {
     .bio-container {
@@ -285,7 +285,7 @@ html {
 }
 
 .paragraphs {
-    background-color: #eee;
+    background-color: rgba(233, 30, 99, 0.2);
     position: relative;
     grid-column: 2/-1;
 }
@@ -298,6 +298,12 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: all .5s ease;
+}
+.picture_biography:hover {
+    outline: 5px solid #e91e63;
+    outline-offset: .5rem;
+    transform: translate(-50%, -50%) scale(1.7);
 }
 
 h3 {
