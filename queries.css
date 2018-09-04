@@ -1,133 +1,69 @@
-/*@media only screen and (max-width: 1310px) {
-    .sub-title {
-        animation: none;
+@media only screen and (max-width: 1200px) {
+    .biography {
+        font-size: 1.5rem;
+        padding: .5rem .2rem;
     }
-    .title {
-        font-size: 3rem;
+
+    .card {
+        margin: .2rem 0;
+        grid-column: 1 / -1;
     }
     .app__heading, 
-.beauty__heading,
-.cerc__heading,
-.day__heading {
-        padding: 2rem 0 2rem 3rem;
-        font-size: 1rem;  
+    .beauty__heading,
+    .cerc__heading,
+    .day__heading {
+        padding: .8rem 3rem;
+    }
+
+    .app__challenge,
+    .beauty__challenge,
+    .cerc__challenge,
+    .day__challenge {
+        margin-top: .2rem;
+        padding-top: .8rem;
+    }
 }
+
+@media only screen and (max-width: 900px) {
+     .container {
+         grid-template-rows: 6rem auto auto;
+         grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+     }
      
-.app__text,
-.beauty__text,
-.cerc__text, 
-.day__text {
-        font-size: 1rem;
-        line-height: 150%;
-        letter-spacing: 1px;
-    }
-    
-.app__challenge,
-.beauty__challenge,
-.cerc__challenge,
-.day__challenge {
-        color: #8e8b8b;
-        font-size: 1rem;
-        margin: 2rem 0 1rem 2rem;
-        padding-top: 0;
-}
-    
-.app__achievements,
-.beauty__achievements, 
-.cerc__achievements,
-.day__achievements {
-        font-size: 1rem;
-        margin-left: 2rem; 
-}
-    .container-1,
-    .container-3,
-    .container-2,
-    .container-4 {
-        grid-column: col-start 3/ col-end 6;
-    }
-    
-    .card {
-        width: 70%;
-    }
+     .sidebar {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        display: grid;
+        grid-template-columns: repeat(5, auto);   
+         }
+     
+     .sidebar-item {
+         padding: 0;
+         letter-spacing: 0;
+         font-size: 1rem;
+         display: inline-block;
+     }
+     .hidden { visibility: hidden;}
 }
 
-@media (max-width: 960px) {
-    .biography {
-        padding: 2rem 1rem;
 
-    }
-}
-
-@media (max-width: 870px) {
-    .card {
-        width: 100%;
-    }
-    .biography {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .container-1,
-    .container-3,
-    .container-2,
-    .container-4 {
-        grid-column: center-start / center-end;
-    }
-    .biography{
-        grid-column: center-start / center-end;
-        margin: 0 auto;
-        text-align: left;
-        color: #fff;
-        background-image: linear-gradient(rgba(168, 8, 70, 0.67), rgba(97, 85, 136, 0.93)), url(img/me.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .source-text {
-    background: -webkit-linear-gradient(#fff, #fff);
-     background: linear-gradient(57deg, rgba(255, 255, 255, 0.94),  rgba(255, 255, 255, 0.87));
-     -webkit-background-clip: text;
-     background-clip: text;
-     -webkit-text-fill-color: transparent;
-     text-fill-color: transparent;   
-}
-    .var {
-        background: #ffdb12;
-         -webkit-background-clip: text;
-    background-clip: text;
-    text-fill-color: transparent;}
-    .paragraphs {
+@media only screen and (max-width:700px) {
+    .letter-wrapper {
         display: none;
     }
-    
-    
-.bio, .obj {
-    background: #66cec2;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-fill-color: transparent;
-}
 }
 
 
-@media (max-width: 560px) {
-    .container-1,
-    .container-3,
-    .container-2,
-    .container-4 {
-        grid-column: full-start / full-end;
-    }
-    .card {
-        box-shadow: none;
+@media only screen and (max-width: 600px) {
+    .bio-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;}
+   
+     .source-text {
+        padding: 3rem;
     }
 }
-*/
-
-
-
-
-
 
 
 

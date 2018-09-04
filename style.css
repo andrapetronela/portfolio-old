@@ -20,12 +20,7 @@ html {
     font-family: 'Open Sans';
     
 }
- @media only screen and (max-width: 900px) {
-     .container {
-         grid-template-rows: 6rem auto auto;
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-     }
-    }
+
 
 .sidebar {
     background-color: #111;
@@ -35,22 +30,7 @@ html {
     cursor: pointer;
  
 }
- @media only screen and (max-width: 900px) {
-         .sidebar {
-             grid-column: 1 / -1;
-             grid-row: auto;
-             display: grid;
-             grid-template-columns: repeat(5, auto);
-             
-         }
-     .sidebar-item {
-         padding: 0;
-         letter-spacing: 0;
-         font-size: 1rem;
-         display: inline-block;
-     }
-     .hidden { visibility: hidden;}
-}
+
 
 .port-container {
     display: grid;
@@ -106,7 +86,7 @@ html {
 }
 
 .title {
-     font-size: 2rem;
+     font-size: 4rem;
      background: -webkit-linear-gradient(to left bottom, #071D7E, #8E117D, #D4336A, #FB7155, #FFB54E);
      background: linear-gradient(to left bottom,#071D7E 10%, #8E117D, #D4336A, #FB7155, #FFB54E);
      -webkit-background-clip: text;
@@ -118,17 +98,11 @@ html {
    
 .letter-wrapper {
     position: absolute;
-    left: 90%;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 22;
 }
 
-@media only screen and (max-width:700px) {
-    .letter-wrapper {
-        display: none;
-    }
-}
 .a1 {
     position: relative;
     top: -4rem;
@@ -199,23 +173,17 @@ html {
 }
 }
 
-.bio-container {
+.about {
     grid-column: full-start / full-end;
+    
+}
+.bio-container {
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 3rem;
-    margin: 5rem auto;
+    margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
-    .bio-container {
-        grid-template-columns: 1fr;
-        padding: 0;
-        margin: 0;}
-   
-     .source-text {
-        padding: 3rem;
-    }
-}
+
 
 .heading {
     grid-column: col-start 4 / col-end 5;
@@ -244,12 +212,7 @@ html {
     padding: 2rem 3rem;
     line-height: 130%;
     transition: all .5s; }
-@media only screen and (max-width: 1200px) {
-    .biography {
-        font-size: 1.5rem;
-        padding: .5rem .2rem;
-    }
-}
+
 
 .source-text {
      background:  #de9115;
@@ -257,7 +220,6 @@ html {
      background-clip: text;
      -webkit-text-fill-color: transparent;
      text-fill-color: transparent;  
-    color: #de9115;
 }
 
 .var {
@@ -275,9 +237,9 @@ html {
 }
 
 .paragraphs {
-    background-color: rgba(233, 30, 99, 0.2);
     position: relative;
     grid-column: 2/-1;
+    background: linear-gradient(to right bottom, #FC5C7D, #6a82fb);
 }
 
 
@@ -287,13 +249,14 @@ html {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    transition: all .5s ease;
+    transform: translate(-50%, -50%) scale(1.7);
+    transition: all .5s linear;
 }
 .picture_biography:hover {
-    outline: 5px solid #e91e63;
-    outline-offset: .5rem;
-    transform: translate(-50%, -50%) scale(1.7);
+    outline: 1px solid #e91e63;
+    outline-offset: 6rem;
+    transform: translate(-50%, -50%) scale(1);
+    
 }
 
 h3 {
@@ -312,12 +275,6 @@ h3 {
     border-top-right-radius: 3px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .card {
-        margin: .2rem 0;
-        grid-column: 1 / -1;
-    }
-}
 
 
 .img-frame {
@@ -359,14 +316,7 @@ h3 {
         letter-spacing: 1px;
 } 
 
-@media only screen and (max-width: 1200px) {
-    .app__heading, 
-    .beauty__heading,
-    .cerc__heading,
-    .day__heading {
-        padding: .8rem 3rem;
-    }
-}
+
 .app__heading span,
 .beauty__heading span,
 .day__heading span {
@@ -399,15 +349,7 @@ h3 {
         border-top: 1px solid #dedede; 
 }
 
-@media only screen and (max-width: 1200px) {
-    .app__challenge,
-    .beauty__challenge,
-    .cerc__challenge,
-    .day__challenge {
-        margin-top: .2rem;
-        padding-top: .8rem;
-    }
-}
+
 
 .app__challenge span,
 .beauty__challenge span,
