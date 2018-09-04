@@ -15,14 +15,14 @@ html {
     overflow-x: hidden;
     background-color: #eee;
     grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)[full-end];
-    grid-template-rows: 97vh auto repeat(5, min-content); 
+    grid-template-rows: 100vh auto repeat(5, min-content); 
     
     font-family: 'Open Sans';
     
 }
  @media only screen and (max-width: 900px) {
      .container {
-         grid-template-rows: 6rem 80vh auto;
+         grid-template-rows: 6rem auto auto;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
      }
     }
@@ -100,7 +100,7 @@ html {
     }
 
 .header {
-    background-color: #fff;
+    background-color: #eee;
     grid-column: full-start / full-end;
     position: relative;
 }
@@ -113,6 +113,7 @@ html {
      background-clip: text;
      -webkit-text-fill-color: transparent;
      text-fill-color: transparent; 
+    display: none;
 }
    
 .letter-wrapper {
@@ -163,7 +164,7 @@ html {
 }
 
 .animation {
-    background-color: transparent;
+    background-color: #eee;
     grid-column: col-start 3 / col-end 6;
     text-align: center;
     margin-top: -3rem;
@@ -195,10 +196,26 @@ html {
 .bio-container {
     grid-column: full-start / full-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+    .bio-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+     .source-text {
+        padding: 5rem;
+    }
+    
 }
 
+@media only screen and (max-width: 600px) {
+     .source-text {
+        padding: 2rem 0;
+    }
+}
 
 .heading {
     grid-column: col-start 4 / col-end 5;
@@ -234,11 +251,14 @@ html {
     background-color: #333;
     font-size: 1.7rem;
     display: inline-block;
-    padding: 10% 5rem;
+    padding: 2rem 3rem;
     line-height: 130%;
     transition: all .5s; }
-.biography:hover {
-    background-color: #fff;
+@media only screen and (max-width: 1200px) {
+    .biography {
+        font-size: 1.5rem;
+        padding: .5rem .2rem;
+    }
 }
 
 .source-text {
@@ -266,19 +286,20 @@ html {
 }
 
 .paragraphs {
-    background-image: linear-gradient(rgba(234, 9, 76, .8) 2rem, rgba(23, 51, 102, 0.78)),
-                url("me.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    transition: transform .5s;
-    
+    background-color: #eee;
+    position: relative;
+    grid-column: 2/-1;
 }
 
-.paragraphs:hover {
-    transform: scale(.7);
-}
 
+.picture_biography {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 h3 {
     text-align: center;
