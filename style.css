@@ -106,7 +106,7 @@ html {
 }
 
 .title {
-     font-size: 4.5rem;
+     font-size: 2rem;
      background: -webkit-linear-gradient(to left bottom, #071D7E, #8E117D, #D4336A, #FB7155, #FFB54E);
      background: linear-gradient(to left bottom,#071D7E 10%, #8E117D, #D4336A, #FB7155, #FFB54E);
      -webkit-background-clip: text;
@@ -118,8 +118,8 @@ html {
    
 .letter-wrapper {
     position: absolute;
-    left: 60%;
-    top: 45%;
+    left: 90%;
+    top: 50%;
     transform: translate(-50%, -50%);
     z-index: 22;
 }
