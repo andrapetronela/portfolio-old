@@ -227,17 +227,7 @@ html {
     text-transform: uppercase;
 }
 
-.chart {
-    grid-column: col-start 2 / col-end 7;
-    display: grid;
-    position: relative;
-}
 
-@media only screen and (max-width: 900px) {
-    .chart {
-        grid-column: full-start / full-end;
-    }
-}
 .footer {
     grid-column: full-start / full-end;
 }
@@ -507,64 +497,59 @@ h3 {
 }
 
 
-.skills__item {
-    color: rgba(255, 255, 255, 0.81); 
-    font-size: 1.7rem;
-    display: block;
-    padding: 1rem 2rem;
-    }
-
-.skills__item:after {
-    content: '';
-    height: 1rem;
-    width: 80%;
-    display: block;
-    border-radius: 5px;
+.skills-table {
+    grid-column: full-start / full-end;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
 }
 
-#html:after {
-    background-image:  linear-gradient(90deg, #eb1919, #ff3bb4, #f37221, #eb4848, #eb1919);
-    background-size: 170%;
-    animation: button 10s linear infinite alternate;
-    width: 90%;
+.skill {
+    height: 15rem;
+    width: 16rem;
+    font-size: 10rem;
 }
-#css:after {
-    background-image:  linear-gradient(90deg, #0069c0, #53d1ef, #29eabd, #0069c0);
-    background-size: 170%;
-    animation: button 8s linear infinite alternate;
-    width: 90%;
+.html {
+    color: #e54d26;
 }
-#js:after {
-    background-image:  linear-gradient(90deg, #ffea00, #e8f4a6, #e68616, #ffea00);
-    background-size: 170%;
-    animation: button 8s linear infinite alternate;
-    width: 65%;
+.css {    
+    color: #3d8fc6;
 }
-#jquery:after {
-    background-image:  linear-gradient(90deg, #5f76f8, #308ffe, #094fd3, #5f76f8);
-    background-size: 170%;
-    animation: button 9s linear infinite alternate;
-    width: 45%;
+.sass {
+    color: #c6538c;
 }
-#sass:after {
-    background-image:  linear-gradient(90deg, #f48fb1, #f5cfdc, #e8155c, #f48fb1);
-    background-size: 170%;
-    animation: button 9s linear infinite alternate;
-    width: 80%;
+
+.bootstrap {
+    color: #563d7c;
 }
-#react:after {
-    background-image:  linear-gradient(90deg, #19B5FE, #6BB9F0, #89C4F4, #19B5FE);
-    background-size: 170%;
-    animation: button 10s linear infinite alternate;
-    background-color: #;
-    width: 30%;
+.js {
+    color: #f0db4f;
 }
-#py:after {
-    background-image:  linear-gradient(90deg, #1E8BC3, #19B5FE, #1E8BC3, #1E8BC3);
-    background-size: 170%;
-    animation: button 10s linear infinite alternate;
-    background-color: #;
-    width: 40%;
+.npm {
+    color: #cb3837;
+}
+
+.node {
+    color: #83CD29;
+}
+
+.react {
+    color: #61dafb;
+}
+
+.git {
+    color: #f34f29;
+}
+
+.github {
+    color: #181616;
+}
+
+.python {
+    color: #ffd343;
 }
 
 .footer {
