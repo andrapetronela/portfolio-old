@@ -57,6 +57,11 @@
      .source-text {
         padding: 3rem;
     }
+    
+    .heading {
+        margin: 2rem;
+        padding: 2rem;
+    }
 }
 
 @media only screen and (max-width: 450px) {
