@@ -5,22 +5,21 @@
     }
 
     .card {
-        margin: .2rem 0;
         grid-column: 1 / -1;
     }
     .app__heading, 
     .beauty__heading,
     .cerc__heading,
     .day__heading {
-        padding: .8rem 3rem;
+        padding: 1.2rem 3rem;
     }
 
     .app__challenge,
     .beauty__challenge,
     .cerc__challenge,
     .day__challenge {
-        margin-top: .2rem;
-        padding-top: .8rem;
+        margin-top: .5rem;
+        padding-top: 1rem;
     }
 }
 
@@ -29,6 +28,7 @@
          grid-template-rows: 6rem auto auto;
          grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
      }
+    
      
      .sidebar {
         grid-column: 1 / -1;
