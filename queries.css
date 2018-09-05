@@ -7,25 +7,12 @@
     .card {
         grid-column: 1 / -1;
     }
-    .app__heading, 
-    .beauty__heading,
-    .cerc__heading,
-    .day__heading {
-        padding: 1.2rem 3rem;
-    }
-
-    .app__challenge,
-    .beauty__challenge,
-    .cerc__challenge,
-    .day__challenge {
-        margin-top: .5rem;
-        padding-top: 1rem;
-    }
+    
 }
 
 @media only screen and (max-width: 900px) {
      .wrapper {
-        grid-template-rows: 3rem 90vh repeat(5, min-content); 
+        grid-template-rows: 3rem 97vh repeat(5, min-content); 
          grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
      }
     
@@ -42,7 +29,7 @@
      .sidebar-item {
          padding: 0;
          letter-spacing: 0;
-         font-size: 1rem;
+         font-size: 1.5rem;
      }
    
     .sidebar-item::before {
@@ -54,12 +41,12 @@
     .animation { display: none;}
     
     .skill {
-        font-size: 3rem;
+       height: 5rem;
+        width: 6rem;
+        font-size: 4rem;
+        margin: 1.5rem;
     }
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
     .bio-container {
@@ -72,6 +59,15 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .source-text {
+        padding: 0;
+    }
+    
+    .sidebar-item {
+        font-size: 1rem;
+    }
+}
 
 
 
