@@ -24,26 +24,38 @@
 }
 
 @media only screen and (max-width: 900px) {
-     .container {
-         grid-template-rows: 6rem auto auto;
+     .wrapper {
+        grid-template-rows: 3rem 90vh repeat(5, min-content); 
          grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
      }
     
-     
      .sidebar {
         grid-column: 1 / -1;
-        grid-row: auto;
-        display: grid;
-        grid-template-columns: repeat(5, auto);   
-         }
+         grid-row: 1 /span 1;
+        height: 3rem;
+        display: flex;
+        padding: .2rem 0;
+        justify-content: space-around;
+        align-items: center;
+        }
      
      .sidebar-item {
          padding: 0;
          letter-spacing: 0;
          font-size: 1rem;
-         display: inline-block;
      }
-     .hidden { visibility: hidden;}
+   
+    .sidebar-item::before {
+        visibility: hidden;
+    }
+    .letter-wrapper {
+        grid-row: 2 / span 1;
+    }
+    .animation { display: none;}
+    
+    .skill {
+        font-size: 3rem;
+    }
 }
 
 

@@ -10,7 +10,7 @@ html {
     overflow-x: hidden;
 }
 
-.container {
+.wrapper {
     display: grid;
     overflow-x: hidden;
     background-color: #eee;
@@ -116,9 +116,6 @@ html {
     cursor: pointer;
 }
 
-.a1:hover {
-    top: -1rem;
-}
 
 .n {
     transform: rotate(180deg);
@@ -270,16 +267,14 @@ h3 {
 }
 
 .card {
-    width: 25rem;
+    width: 35rem;
     background-color: rgba(255, 255, 255, 0.29);
-    margin: 5rem auto ;
+    margin: 5rem 3rem;
     box-shadow:  -5px 0 6px #ccc, 5px 0 6px #ccc;
     position: relative; 
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
-
-
 
 .img-frame {
     height: 15rem;
