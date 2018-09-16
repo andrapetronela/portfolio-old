@@ -1,3 +1,3 @@
 # andraS.github.io
 
-Portfolio
+Here you can visit my portfolio and see some of my recent projects.
