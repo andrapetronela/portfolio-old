@@ -216,25 +216,17 @@ html {
 
 
 .source-text {
-     background:  #de9115;
-     -webkit-background-clip: text;
-     background-clip: text;
-     -webkit-text-fill-color: transparent;
-     text-fill-color: transparent;  
+     color:  #de9115;
+      
 }
 
 .var {
-    background: #2c81e3;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #2c81e3;
 }
 
 .bio, .obj {
-    background: #a44fed;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #a44fed;
+ 
 }
 
 .paragraphs {
