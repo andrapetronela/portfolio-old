@@ -3,90 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="queries.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>Andra Strachinaru</title>
 </head>
-    <body class="wrapper">
-        
-        <script>
-            $( document ).ready(function() {
-                $('.a1').css({
-                            'top': '0',
-                             'opacity': '1',
-                             'transform': 'rotate(360deg)'});
-                
-                $('.n').css({
-                            'transform': 'rotate(360deg)',
-                            'left': '0'});
-                $('.d').css({
-                            'transform': 'rotate(360deg)',
-                            'left': '0'
-                });
-                $('.r').css({
-                            'transform': 'rotate(360deg)',
-                            'left': '0'});
-                $('.a2').css({
-                            'bottom': '0',
-                            'transform': 'rotate(360deg)'});
-                
-               /* $('html').contextmenu(function () {
-                 alert('Hello');
-                }) 
-                */
-            });
-        </script>
-        
-
-        
-        
-        <div class="sidebar">
-            <a href="#about" class="sidebar-item">About</a>
-            <a href="#portfolio" class="sidebar-item">Projects</a>
-            <a  href="https://github.com/andrapetronela/" class="sidebar-item" target="_blank">
-            GitHub</a>
-            <a href="https://www.facebook.com/andraAPP" class="sidebar-item hidden" target="_blank">Facebook</a>
-            <a href="https://www.linkedin.com/in/andra-strachinaru-120595b1/" class="sidebar-item hidden" target="_blank">Linkedin</a>
-            
-            <a  href="Andra%20Strachinaru%20Resume.pdf" class="sidebar-item hidden" target="_blank">
-            Resume</a>
-        </div>
-        
-        <header class="header">
-          <!--  <div class="title">Andra</div> -->
-          <div class="letter-wrapper">
-                <div class="title a1">A</div>
-                <div class="title n">N</div>
-                <div class="title d">D</div>
-                <div class="title r">R</div>
-                <div class="title a2">A</div>
-            </div>
-           
-            
-        </header>
-        <div class="animation">
-            <div class="sub-title">
-                    <span class="coding">coding </span>
-                    <span class="equal">== </span>
-                    <span class="passion"> passion</span>
-            </div></div>
-        
-        <section class="about">
-        <h2 class="heading">About</h2>
-        <div class="bio-container" id="about">
-               
-                <div class="biography"> 
-                    <div class="source-text">
-                               <pre> <code class="code"> <span class="var">let</span> <span class="bio">biography </span>= {
+<body class="wrapper"> 
+    <script>
+      $( document ).ready(function() {
+        $('.a1').css({
+                'top': '0',
+                'opacity': '1',
+                'transform': 'rotate(360deg)'});
+        $('.n').css({
+                'transform': 'rotate(360deg)',
+                'left': '0'});
+        $('.d').css({
+                'transform': 'rotate(360deg)',
+                'left': '0'
+        });
+        $('.r').css({
+                'transform': 'rotate(360deg)',
+                'left': '0'});
+        $('.a2').css({
+                'bottom': '0',
+                'transform': 'rotate(360deg)'});
+       /* $('html').contextmenu(function () {
+         alert('Hello');
+        }) 
+        */
+    });
+    </script>
+<div class="sidebar">
+    <a href="#about" class="sidebar-item">About</a>
+    <a href="#portfolio" class="sidebar-item">Projects</a>
+    <a  href="https://github.com/andrapetronela/" class="sidebar-item" target="_blank">
+    GitHub</a>
+    <a href="https://www.facebook.com/andraAPP" class="sidebar-item hidden" target="_blank">Facebook</a>
+    <a href="https://www.linkedin.com/in/andra-strachinaru-120595b1/" class="sidebar-item hidden" target="_blank">Linkedin</a>
+    <a  href="Andra%20Strachinaru%20Resume.pdf" class="sidebar-item hidden" target="_blank">
+        Resume</a>
+</div>
+<header class="header">
+    <div class="letter-wrapper">
+        <div class="title a1">A</div>
+        <div class="title n">N</div>
+        <div class="title d">D</div>
+        <div class="title r">R</div>
+        <div class="title a2">A</div>
+    </div>  
+</header>
+<div class="animation">
+    <div class="sub-title">
+        <span class="coding">coding </span>
+    </div></div>    
+<section class="about">
+    <h2 class="heading">About</h2>
+    <div class="bio-container" id="about">       
+        <div class="biography"> 
+            <div class="source-text">
+               <pre> 
+                   <code class="code"> <span class="var">let</span> <span class="bio">biography </span>= {
                         <span class="obj">firstName</span>: 'Andra',
                         <span class="obj">lastName</span>: 'Strachinaru',
                         <span class="obj">location</span>: 'Luton, UK',
@@ -101,141 +81,170 @@
                                 "good music",
                                 "sweets"],
                         <span class="obj">siblings</span>: true,
-                        };</code></pre>
-                    </div>
-                </div>
-                            
-            <div class="paragraphs">
-                    <img src="me.jpg" alt="Andra" class="picture_biography">
+                        };
+                    </code>
+                </pre>
             </div>
+        </div>                
+        <div class="paragraphs">
+            <img src="me.jpg" alt="Andra" class="picture_biography">
         </div>
-         </section>
-               <h2 class="heading portfolio" id="portfolio">Projects</h2>
-               <div class="port-container">
-               
-               
-                <div class="photo-container container-0">
-                 <div class="card">
-                 <div class="img-frame">
-                     <a href="https://andrapetronela.github.io/london_weather/"  target="_blank">      
+    </div>
+</section>
+<h2 class="heading portfolio" id="portfolio">Projects</h2>
+<div class="port-container">
+    <div class="photo-container container-0">
+        <div class="card">
+            <div class="img-frame">
+                 <a href="https://andrapetronela.github.io/london_weather/"  target="_blank">      
                      <img src="london_w.png" alt="london weather" class="photo photo-1">
-                     </a>
-                    </div> 
-                
-                    <div class="text-container txt timelink">
-                        
-                        <h3 class="app__heading">Weather app</h3>
-                        <p class="app__text">App concept for getting live weather predictions from <a href="https://www.metaweather.com/" class="challenge">metaweather.com</a></p> 
-                        <p class="app__challenge"> <span>Challenge: </span>React.js</p>
-                        <p class="app__achievements"><span>Achievements:</span> React.js, API request</p>
-                        <a href="https://andrapetronela.github.io/london_weather/" class="site-button" target="_blank">Visit site</a>
-                    </div> 
-                    </div>
-                   </div>
-               
-               
-                  <div class="photo-container container-5">
-            <div class="card">
-                <div class="img-frame"><a href="https://andrapetronela.github.io/london.github.io/" target="_blank"><img src="london.png" alt="london-photo" class="photo photo-8"></a></div> 
-            
-                    <div class="text-container txt-5">
-                     <h3 class="cerc__heading"> Visit London </h3>
-                        <p class="cerc__text">Concept project for practicing CSS Grid properties.</p> 
-                        <p class="cerc__challenge"> <span>Challenge: </span>Layout</p>
-                        <p class="cerc__achievements"><span>Achievements:</span> CSS Grid</p></div> 
-                        <a href="https://andrapetronela.github.io/css_grid.github.io/" class="site-button" target="_blank">Visit site</a>
-                    </div>
-                </div>
-               
-                <div class="photo-container container-0">
-                 <div class="card">
-                 <div class="img-frame">
-                     <a href="https://andrapetronela.github.io/timelink/"  target="_blank">      
-                     <img src="Timelink.png"       alt="timelink"      class="photo photo-1">
-                     </a>
-                    </div> 
-                
-                    <div class="text-container txt timelink">
-                        
-                        <h3 class="app__heading">Timelink</h3>
-                        <p class="app__text">Website concept for Zero to Mastery <a href="https://github.com/zero-to-mastery/Coding_Challenge-8" class="challenge">Challenge #8</a></p> 
-                        <p class="app__challenge"> <span>Challenge: </span>Business idea</p>
-                        <p class="app__achievements"><span>Achievements:</span>  particles.js, CSS effects, Bootstrap</p>
-                        <a href="https://andrapetronela.github.io/timelink/" class="site-button" target="_blank">Visit site</a>
-                    </div> 
-                    </div>
-                   </div>
-                   
-                    <div class="photo-container container-5">
-                        <div class="card">
-                            <div class="img-frame"><a href="https://andrapetronela.github.io/swapi/" target="_blank"><img src="swapi.png" alt="Star Wars" class="photo photo-8"></a></div> 
-            
-                                <div class="text-container txt-5">
-                                 <h3 class="cerc__heading">API request + React</h3>
-                                    <p class="cerc__text">Project challenge to use Star Wars API and build a single page application that displays information on the website.</p> 
-                                    <p class="cerc__challenge"> <span>Challenge: </span>React</p>
-                                    <p class="cerc__achievements"><span>Achievements:</span> Fetching data from APIs, React </p></div> 
-                                    <a href="https://andrapetronela.github.io/swapi/" class="site-button" target="_blank">Visit site</a>
-                        </div>
-                    </div>
-                    
-                    <div class="photo-container container-5">
-                        <div class="card">
-                            <div class="img-frame"><a href="https://andrapetronela.github.io/linear-gradient_generator/" target="_blank"><img src="background_generator.png" alt="linear-gradient-generator-photo" class="photo photo-8"></a></div> 
-            
-                                <div class="text-container txt-5">
-                                 <h3 class="cerc__heading"> Linear-gradient generator</h3>
-                                    <p class="cerc__text">Project that helps the user testing different colors for linear-gradients.</p> 
-                                    <p class="cerc__challenge"> <span>Challenge: </span>Picking the right color</p>
-                                    <p class="cerc__achievements"><span>Achievements:</span> Live background generator </p></div> 
-                                    <a href="https://andrapetronela.github.io/linear-gradient_generator/" class="site-button" target="_blank">Visit site</a>
-                        </div>
-                    </div>
-                    
-                       
-                 
-                   
-                    <div class="photo-container container-2"> 
-                    <div class="card">
-                    <div class="img-frame"><a href="https://andrapetronela.github.io/beauty.github.io/" target="_blank"><img src="beleza.png" alt="aplication-photo" class="photo photo-2"></a></div> 
-                     
-                      <div class="text-container txt-2 beauty">
-                    <h3 class="beauty__heading">Cutting edge</h3>
-                        <p class="beauty__text">Modern website concept, using some of the latest features of CSS3<br><br></p> 
-                        <p class="beauty__challenge"> <span>Challenge: </span>Layout</p>
-                        <p class="beauty__achievements"><span>Achievements:</span> BEM notation
-                         </p>
-                         <a href="https://andrapetronela.github.io/beauty.github.io/" target="_blank" class="site-button" target="_blank">Visit site</a>
-                    </div>
-                     </div>
-                </div>
-               
-                    
-                     
-                </div>
-                   
-                <section class="skills">
-                <h2 class="heading">Skills</h2>
-                <div class="skills-table">
-                   
-                    <i class="fab fa-html5 html skill"></i>
-                    <i class="fab fa-css3-alt css skill"></i>
-                    <i class="fab fa-sass sass skill"></i>
-                    <i class="devicon-bootstrap-plain bootstrap skill"></i>
-                    <i class="fab fa-js js skill"></i>
-                    <i class="fab fa-npm npm skill"></i>
-                    <i class="fab fa-react react skill"></i>
-                    <i class="fab fa-git-square git skill"></i>
-                    <i class="fab fa-github github skill"></i>
-                    <i class="fab fa-python python skill"></i>
-                </div>
-            </section>
-        
-        <footer class="footer">
-            <p>&copy; <script>
-                        document.write(new Date().getFullYear())
-                    </script> Coded with <i class="fa fa-heart heart"></i> by Andra Strachinaru. All rights reserved.</p>
-        </footer>
-    </body>
-
+                 </a>
+            </div> 
+            <div class="text-container txt timelink">            
+                <h3 class="app__heading">Weather app</h3>
+                <p class="app__text">Application that is fetching live weather predictions from 
+                    <a href="https://www.metaweather.com/" class="challenge">metaweather.com</a>
+                </p> 
+                <p class="app__challenge">
+                    <span>Challenge: </span>React.js
+                </p>
+                <p class="app__achievements">
+                    <span>Achievements:</span> React.js, API request
+                </p>
+                <a href="https://andrapetronela.github.io/london_weather/" class="site-button" target="_blank">Visit site</a>
+            </div> 
+        </div>
+    </div>
+    <div class="photo-container container-5">
+        <div class="card">
+            <div class="img-frame">
+                <a href="https://andrapetronela.github.io/london.github.io/" target="_blank">
+                    <img src="london.png" alt="london-photo" class="photo photo-8">
+                </a>
+            </div> 
+            <div class="text-container txt-5">
+                <h3 class="cerc__heading"> Visit London </h3>
+                <p class="cerc__text">Concept project for practicing CSS Grid properties.</p> 
+                <p class="cerc__challenge"> 
+                    <span>Challenge: </span>Layout
+                </p>
+                <p class="cerc__achievements">
+                    <span>Achievements:</span> CSS Grid
+                </p>
+            </div> 
+            <a href="https://andrapetronela.github.io/css_grid.github.io/" class="site-button" target="_blank">Visit site</a>
+        </div>
+    </div>
+    <div class="photo-container container-0">
+        <div class="card">
+            <div class="img-frame">
+                <a href="https://andrapetronela.github.io/kilos_converter/" target="_blank">      
+                     <img src="converter.png" alt="converter" class="photo photo-1 converter">
+                 </a>
+            </div> 
+            <div class="text-container txt timelink">       
+                <h3 class="app__heading">Converter</h3>
+                <p class="app__text">Calculator: pounds to kilograms and vice versa
+                </p> 
+                <p class="app__challenge"> <span>Challenge: </span>JavaScript</p>
+                <p class="app__achievements"><span>Achievements:</span>  JavaScript, DOM Manipulation</p>
+                <a href="https://andrapetronela.github.io/kilos_converter/" class="site-button" target="_blank">Visit site</a>
+             </div> 
+        </div>
+    </div>
+    <div class="photo-container container-0">
+        <div class="card">
+            <div class="img-frame">
+                <a href="https://andrapetronela.github.io/timelink/" target="_blank">      
+                     <img src="Timelink.png" alt="timelink" class="photo photo-1">
+                 </a>
+            </div> 
+            <div class="text-container txt timelink">       
+                <h3 class="app__heading">Timelink</h3>
+                <p class="app__text">Website concept for Zero to Mastery 
+                    <a href="https://github.com/zero-to-mastery/Coding_Challenge-8" class="challenge">Challenge #8</a>
+                </p> 
+                <p class="app__challenge"> <span>Challenge: </span>Business idea</p>
+                <p class="app__achievements"><span>Achievements:</span>  particles.js, CSS effects, Bootstrap</p>
+                <a href="https://andrapetronela.github.io/timelink/" class="site-button" target="_blank">Visit site</a>
+             </div> 
+        </div>
+    </div>
+    <div class="photo-container container-5">
+        <div class="card">
+            <div class="img-frame">
+                <a href="https://andrapetronela.github.io/swapi/" target="_blank">
+                    <img src="swapi.png" alt="Star Wars" class="photo photo-8">
+                </a>
+            </div> 
+        <div class="text-container txt-5">
+            <h3 class="cerc__heading">API request + React</h3>
+            <p class="cerc__text">Project challenge to use Star Wars API and build a single page application that displays information on the website.</p> 
+            <p class="cerc__challenge"> <span>Challenge: </span>React</p>
+            <p class="cerc__achievements"><span>Achievements:</span> Fetching data from APIs, React </p>
+        </div> 
+        <a href="https://andrapetronela.github.io/swapi/" class="site-button" target="_blank">Visit site</a>
+        </div>
+    </div>
+    <div class="photo-container container-5">
+        <div class="card">
+            <div class="img-frame">
+                <a href="https://andrapetronela.github.io/linear-gradient_generator/" target="_blank">
+                    <img src="background_generator.png" alt="linear-gradient-generator-photo" class="photo photo-8">
+                </a>
+            </div> 
+            <div class="text-container txt-5">
+                <h3 class="cerc__heading"> Linear-gradient generator</h3>
+                    <p class="cerc__text">Project that helps the user testing different colors for linear-gradients.</p> 
+                    <p class="cerc__challenge"> 
+                        <span>Challenge: </span>Picking the right color
+                    </p>
+                    <p class="cerc__achievements"><span>Achievements:</span> Live background generator </p>
+            </div> 
+            <a href="https://andrapetronela.github.io/linear-gradient_generator/" class="site-button" target="_blank">Visit site</a>
+        </div>
+    </div>
+    <div class="photo-container container-2"> 
+        <div class="card">
+            <div class="img-frame">
+                <a href="https://andrapetronela.github.io/beauty.github.io/" target="_blank">
+                    <img src="beleza.png" alt="aplication-photo" class="photo photo-2">
+                </a>
+            </div> 
+        <div class="text-container txt-2 beauty">
+            <h3 class="beauty__heading">Cutting edge</h3>
+            <p class="beauty__text">Modern website concept, using some of the latest features of CSS3<br><br></p> 
+            <p class="beauty__challenge"> <span>Challenge: </span>Layout</p>
+            <p class="beauty__achievements">
+                <span>Achievements:</span> BEM notation
+            </p>
+            <a href="https://andrapetronela.github.io/beauty.github.io/" target="_blank" class="site-button" target="_blank">Visit site</a>
+         </div>
+        </div>
+    </div>  
+</div>       
+<section class="skills">
+    <h2 class="heading">Skills</h2>
+    <div class="skills-table">               
+        <i class="fab fa-html5 html skill"></i>
+        <i class="fab fa-css3-alt css skill"></i>
+        <i class="fab fa-sass sass skill"></i>
+        <i class="devicon-bootstrap-plain bootstrap skill"></i>
+        <i class="fab fa-js js skill"></i>
+        <i class="fab fa-npm npm skill"></i>
+        <i class="fab fa-react react skill"></i>
+        <i class="fab fa-git-square git skill"></i>
+        <i class="fab fa-github github skill"></i>
+        <i class="fab fa-python python skill"></i>
+    </div>
+</section>
+<footer class="footer">
+            <p>&copy; 
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> 
+                Coded with <i class="fa fa-heart heart"></i> by Andra Strachinaru. All rights reserved.
+            </p>
+</footer>
+</body>
 </html>
