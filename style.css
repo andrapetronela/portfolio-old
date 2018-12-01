@@ -343,21 +343,19 @@ h3 {
 .beauty__heading,
 .cerc__heading,
 .day__heading {
-        color: #333;
-        padding: 3rem 0 3rem 4rem;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 600; 
-        text-align: left;
-        letter-spacing: 1px;
+    color: #333;
+    padding: 3rem 0 3rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 600; 
+    text-align: left;
+    letter-spacing: 1px;
 } 
-
 
 .app__heading span,
 .beauty__heading span,
 .day__heading span {
-        text-transform: lowercase;
-        }
+    text-transform: lowercase;
+}
     
      
 .app__text,
