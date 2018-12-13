@@ -308,7 +308,7 @@ h3 {
     width: 35rem;
     background-color: rgba(255, 255, 255, 0.29);
     margin: 5rem 3rem;
-    box-shadow:  -5px 0 6px #ccc, 5px 0 6px #ccc;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     position: relative; 
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -413,8 +413,8 @@ h3 {
 .site-button:link,
 .site-button:visited {
     text-decoration: none;
-    background-image: linear-gradient(90deg, #2196f3, #f50057, #ffeb3b, #2196f3);
-    background-size: 400%;
+    background-image: linear-gradient(90deg, #272e5c, #3ac9db, #2a8c98, #272e5c);
+    background-size: 600%;
     display: block;
     padding: 1rem 0 2rem 0;
     text-transform: uppercase;
@@ -431,7 +431,7 @@ h3 {
 
 .site-button:hover,
 .site-button:active {
-    animation: button 12s linear infinite;
+    animation: button 25s linear infinite;
     font-size: 1.3rem;
     color: #333;
     transition: all .5s;
