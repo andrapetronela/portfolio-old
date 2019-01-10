@@ -436,7 +436,15 @@ h3 {
     color: #333;
     transition: all .5s;
 }
+.coders-link:link,
+.coders-link:visited {
+    color: #333;
+}
 
+.coders-link:hover,
+.coders-link:active {
+    color: rgba(51, 51, 51, 0.5);
+}
 
 @keyframes button {
     0% {
