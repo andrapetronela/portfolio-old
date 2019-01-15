@@ -116,6 +116,7 @@ html {
     height: 80vh;
     margin: 2rem auto 0;
     overflow: hidden;
+    padding: 2rem;
 }
 
 .container img {
