@@ -233,11 +233,11 @@ h3 {
     height: auto;
     background-size: cover;
     background-position: center;
-    transition: transform .5s;
+    transition: all .3s;
 }
 
 .photo:hover {
-    transform: scale(1.1);
+    filter: sepia(1);
 }
 
 .photo-container {
