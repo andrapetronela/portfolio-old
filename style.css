@@ -14,13 +14,13 @@ html {
   display: grid;
   overflow-x: hidden;
   background-color: #eee;
-  grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] minmax(
-      6rem,
-      1fr
-    ) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(
-      6rem,
-      1fr
-    ) [full-end];
+  grid-template-columns:
+    [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    ) [center-end] minmax(6rem, 1fr)
+    [full-end];
   grid-template-rows: 97vh auto repeat(5, min-content);
 
   font-family: "Open Sans";
@@ -119,6 +119,8 @@ html {
   margin: 2rem auto 0;
   overflow: hidden;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .container img {
