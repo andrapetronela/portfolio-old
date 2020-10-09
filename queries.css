@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 25px;
   }
 }
 
@@ -58,6 +59,22 @@
     font-size: 4rem;
     margin: 1.5rem;
   }
+  .illustrator {
+    height: 5rem;
+    width: 5rem;
+  }
+  .styledComponents {
+    height: 5rem;
+    width: 5rem;
+  }
+  .gatsby {
+    height: auto;
+    width: 7rem;
+  }
+  .skillBox {
+    height: 7rem;
+    width: 7rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -78,6 +95,10 @@
   .container {
     left: 30vw;
     top: 30vh;
+  }
+  .card {
+    width: 100%;
+    margin: 25px 0;
   }
 }
 

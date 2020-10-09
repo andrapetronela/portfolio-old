@@ -351,13 +351,14 @@ h3 {
 .challenge:active {
   color: #0069c0;
 }
-
+.skills-table {
+  padding: 0 25px 5rem;
+}
 .skills {
   grid-column: full-start / full-end;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  /* margin: 4rem auto; */
   justify-content: center;
   align-items: center;
 }
