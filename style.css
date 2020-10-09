@@ -352,14 +352,12 @@ h3 {
   color: #0069c0;
 }
 
-.heading-skills {
-}
 .skills {
   grid-column: full-start / full-end;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 4rem auto;
+  /* margin: 4rem auto; */
   justify-content: center;
   align-items: center;
 }
@@ -369,6 +367,24 @@ h3 {
   width: 15rem;
   font-size: 9rem;
   margin: 1.5rem;
+}
+.skillBox {
+  height: 15rem;
+  width: 15rem;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.illustrator {
+  height: 6rem;
+  width: 6rem;
+}
+.styledComponents {
+  height: 7rem;
+  width: 7rem;
+}
+.gatsby {
+  width: auto;
 }
 .html {
   color: #e54d26;
