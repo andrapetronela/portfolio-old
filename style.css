@@ -35,9 +35,11 @@ html {
 
 .port-container {
   grid-column: full-start / full-end;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .sidebar a {
   text-decoration: none;
@@ -237,7 +239,7 @@ h3 {
 .cerc__heading,
 .day__heading {
   color: #333;
-  padding: 3rem 0 3rem 4rem;
+  padding: 3rem 3.5rem 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
@@ -258,9 +260,9 @@ h3 {
   display: block;
   margin: 0 auto;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 150%;
-  color: #333;
+  color: #4a4a4a;
 }
 
 .app__challenge,
@@ -269,9 +271,9 @@ h3 {
 .day__challenge {
   color: #333;
   font-size: 1.5rem;
-  margin: 3rem 4rem 1rem 2rem;
-  display: inline-block;
+  margin: 2rem 3.5rem 1rem;
   padding-top: 1rem;
+  display: inline-block;
   border-top: 1px solid #dedede;
 }
 
@@ -289,7 +291,7 @@ h3 {
 .day__achievements {
   color: #333;
   font-size: 1.4rem;
-  margin-left: 2rem;
+  margin: 0 3.5rem;
 }
 .app__achievements span,
 .beauty__achievements span,
@@ -302,26 +304,24 @@ h3 {
 .site-button:link,
 .site-button:visited {
   text-decoration: none;
-  background-image: linear-gradient(90deg, #272e5c, #2a8c98, #272e5c);
-  background-size: 600%;
+  background: #223663;
   display: block;
   padding: 1rem 0 2rem 0;
   text-transform: uppercase;
   color: #fff;
   font-size: 1.4rem;
-  text-align: center;
   margin-top: 2rem;
   transition: all 0.5s;
   position: relative;
   z-index: 1;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-button:hover,
 .site-button:active {
-  animation: button 25s linear infinite;
-  /* font-size: 1.3rem; */
+  background: #0f182c;
   transition: all 0.5s;
 }
 .coders-link:link,
