@@ -1,86 +1,96 @@
 @media only screen and (max-width: 1200px) {
-    .biography {
-        font-size: 1.5rem;
-        padding: .5rem .2rem;
-    }
+  .biography {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.2rem;
+  }
 
-    .card {
-        grid-column: 1 / -1;
-    }
-    
+  .card {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 1200px) {
+  .port-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-     .wrapper {
-        grid-template-rows: 5rem 97vh repeat(5, min-content); 
-         grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-     }
-    
-     .sidebar {
-        grid-column: 1 / -1;
-        grid-row: 1 / 1;
-        display: flex;
-        padding: .2rem 0;
-        justify-content: space-around;
-        align-items: center;
-        }
-     
-     .sidebar-item {
-         padding: 0;
-         letter-spacing: 0;
-         font-size: 1.5rem;
-     }
-   
-    .sidebar-item::before {
-        visibility: hidden;
-    }
-    .letter-wrapper {
-        grid-row: 2 / span 1;
-    }
-    .animation { display: none;}
-    
-    .skill {
-       height: 5rem;
-        width: 6rem;
-        font-size: 4rem;
-        margin: 1.5rem;
-    }
+  .wrapper {
+    grid-template-rows: 5rem 97vh repeat(5, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  .sidebar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    display: flex;
+    padding: 0.2rem 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sidebar-item {
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+  }
+
+  .sidebar-item::before {
+    visibility: hidden;
+  }
+  .letter-wrapper {
+    grid-row: 2 / span 1;
+  }
+  .animation {
+    display: none;
+  }
+
+  .skill {
+    height: 5rem;
+    width: 6rem;
+    font-size: 4rem;
+    margin: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .bio-container {
-        grid-template-columns: 1fr;
-        padding: 0;
-        margin: 0;}
-   
-     .source-text {
-        padding: 3rem;
-    }
-    
-    .heading {
-        margin: 2rem;
-        padding: 2rem;
-    }
-    .container {
-        left: 30vw;
-        top: 30vh;
-    }
+  .bio-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+
+  .source-text {
+    padding: 3rem;
+  }
+
+  .heading {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .container {
+    left: 30vw;
+    top: 30vh;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .source-text {
-        padding: 0;
-    }
-    
-    .sidebar-item {
-        font-size: 1rem;
-    }
-     .container {
-        left: 20vw;
-        top: 30vh;
-    }
+  .source-text {
+    padding: 0;
+  }
+
+  .sidebar-item {
+    font-size: 1rem;
+  }
+  .container {
+    left: 20vw;
+    top: 30vh;
+  }
 }
-
-
-
-
